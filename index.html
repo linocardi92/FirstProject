@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--titolo-->
+    <heading>
+      <h1 id="title">FreeCodeCamp Music School</h1>
+      <p id="description">benvenuto sulla nostra piattaforma di registrazione</p>
+    </heading>
+
+    <!--form start-->
+    <form id="survey-form">
+
+      <!--fildset 1-->
+     <fieldset> 
+      <label id="name-label" for="name" required>nome: <input type="text" id="name" placeholder="inserisci il tuo nome" required></input></label>
+      <label id="email-label" for="email">email: <input type="email" id="email" placeholder="insert your email" required></input></label>
+      <label id="number-label" for="number">età: <input type="number" id="number" min="13" max="120" placeholder="age"></input></label>
+     </fieldset>
+     <fieldset> 
+      <label for="dropdown" id="center" text-align="center">Da quale parte d'Italia provieni?
+      <select id="dropdown">
+        <option>Nord</option>
+        <option>Centro</option>
+        <option>Sud</option>
+      </select>
+    </label>
+     </fieldset> 
+      <!--radio buttons-->
+      <fieldset>
+      <legend>cosa è per te la musica?</legend>
+      <label for="professional"><input type="radio" name="radio" id="professional" value="professional"></input> professione</label>
+      <label for="hobby"><input type="radio" name="radio" id="hobby" value="hobby"></input> hobby</label>
+      </fieldset>
+
+      <!--checkbox-->
+      <fieldset>
+      <section>
+        <div>cosa vorresti studiare?</div>
+        <label for="piano"><input type="checkbox" id="piano" value="piano"> pianoforte</label>
+        <label for="violino"><input type="checkbox" id="violino" value="violino"> violino</label>
+        <label for="clarinetto"><input type="checkbox" id="clarinetto" value="clarinetto"> clarinetto</label>
+        <label for="flauto"><input type="checkbox" id="flauto" value="flauto"> flauto</label>
+        <label for="fagotto"l><input type="checkbox" id="fagotto" value="fagotto"> fagotto</label>
+      </section>
+      </fieldset>
+
+      <!--text area-->
+      <label for="info"><p>Chiedici maggiori informazioni:</p>
+        <textarea id="info" rows="5" cols="25"></textarea>
+      </label>
+
+
+      <input type="submit" id="submit" value="submit"/>
+    
+    </form>
+
+  </body>
+</html>
